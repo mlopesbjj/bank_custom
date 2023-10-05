@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.inherited</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="bank_id" position="after">
+                <field name="x_acc_number"/>
+            </field>
+            <!-- <field name="acc_number" attrs="{'invisible': [('x_acc_number', '=', False)]}"/>
+            <field name="acc_number" attrs="{'required': [('x_acc_number', '=', False)]}"/> -->
+            <!-- <field name="acc_number" required="0"/> -->
+            <field name="acc_number" invisible="1"/>
+        </field>
+    </record>
+</odoo>
