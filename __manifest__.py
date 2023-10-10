@@ -3,6 +3,8 @@
     "description": "ADD il campo x_acc_number tipo many2one",
     "summary": "ADD il campo x_acc_number tipo many2one",
     "author": "Marcio Lopes - KHPS",
-    "depends": ['account'],
-    "data": ['views/respartnerbank.xml']
+    "depends": ['account', 
+                'product'],
+    "data": ['views/respartnerbank.xml',
+             'views/product.xml']
 }
