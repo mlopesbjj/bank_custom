@@ -6,5 +6,7 @@
     "depends": ['account', 
                 'product'],
     "data": ['views/respartnerbank.xml',
-             'views/product.xml']
+             'views/product.xml',
+             'views/company.xml',
+             'reports/sale_report_inherit.xml']
 }
