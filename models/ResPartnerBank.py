@@ -9,11 +9,11 @@ class ResPartnerBank(models.Model):
         domain="[('acc_number', '!=', False)]" 
     )
     
-    acc_number = fields.Char(
-        # string='.',
-        invisible=1,
-        required=1
-    )
+    # acc_number = fields.Char(
+    #     # string='.',
+    #     invisible=,
+    #     required=0
+    # )
 
     @api.onchange('x_acc_number')
     def onchange_x_acc_number(self):

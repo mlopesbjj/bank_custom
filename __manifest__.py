@@ -5,8 +5,9 @@
     "author": "Marcio Lopes - KHPS",
     "depends": ['account', 
                 'product'],
-    "data": ['views/respartnerbank.xml',
-             'views/product.xml',
+    "data": ['views/product.xml',
              'views/company.xml',
              'reports/sale_report_inherit.xml']
+            #  'views/respartnerbank.xml',
+
 }
