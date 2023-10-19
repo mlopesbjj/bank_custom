@@ -11,7 +11,7 @@
             <!-- <field name="acc_number" attrs="{'invisible': [('x_acc_number', '=', False)]}"/>
             <field name="acc_number" attrs="{'required': [('x_acc_number', '=', False)]}"/> -->
             <!-- <field name="acc_number" required="0"/> -->
-            <field name="acc_number" invisible="1"/>
+            <!-- <field name="acc_number" invisible="1"/> -->
         </field>
     </record>
 </odoo>

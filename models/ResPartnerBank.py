@@ -15,10 +15,10 @@ class ResPartnerBank(models.Model):
     #     required=0
     # )
 
-    @api.onchange('x_acc_number')
-    def onchange_x_acc_number(self):
-        print('executou a parada 2.')
-        if self.x_acc_number:
-            self.acc_number = self.x_acc_number.acc_number
-        else:
-            self.acc_number = ''
+    # @api.onchange('x_acc_number')
+    # def onchange_x_acc_number(self):
+    #     print('executou a parada 2.')
+    #     if self.x_acc_number:
+    #         self.acc_number = self.x_acc_number.acc_number
+    #     else:
+    #         self.acc_number = ''

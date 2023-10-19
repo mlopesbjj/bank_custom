@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="invoice_account_report_inherit" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@name='due_date']" position="after">
+            <div class="col-auto col-3 mw-100 mb-2" name="banca_label">
+                <strong>Banca:</strong>
+            </div>
+            <div class="col-auto col-3 mw-100 mb-2" name="banca_value">
+                <!-- Insira o campo Banca aqui -->
+            </div>
+        </xpath>
+    </template>
+</odoo>
