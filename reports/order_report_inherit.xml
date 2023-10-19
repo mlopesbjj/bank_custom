@@ -8,7 +8,7 @@
                     <log expr="'LOG_KHPS'" level="info"/>
                     <t t-if="doc.payment_term_id.fatturapa_pm_id.name.lower() and 'riba' in doc.payment_term_id.fatturapa_pm_id.name.lower()">
                         <t t-foreach="doc.partner_id.bank_ids" t-as="account">
-                            <div style="width: 500px;">
+                            <div style="width: 600px;">
                                 <span><strong>Banca:</strong> <t t-esc="account.bank_id.name"/></span>
                             </div>
                             <div>
@@ -17,7 +17,7 @@
                         </t>
                     </t>
                     <t t-else="">
-                        <div style="width: 900px;">
+                        <div style="width: 600px;">
                             <strong>Banca:</strong> <t t-esc="doc.company_id.x_acc_number[0].bank_id.name"/> <strong>IBAN:</strong> <t t-esc="doc.company_id.x_acc_number[0].acc_number"/>
                         </div>
                     </t>
