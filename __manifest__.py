@@ -7,8 +7,8 @@
                 'product'],
     "data": ['views/product.xml',
              'views/company.xml',
-             'reports/order_report_inherit.xml',
-             'reports/invoice_report_inherit.xml']
+             'reports/order_report_inherit.xml']
+            #  'reports/invoice_report_inherit.xml'
             #  'views/respartnerbank.xml',
 
 }

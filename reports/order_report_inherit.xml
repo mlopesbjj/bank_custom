@@ -6,13 +6,13 @@
             <div class="row mt32 mb32" id="test_inherit">
                 <div class="col-auto col-3 mw-100 mb-2">
                     <log expr="'LOG_KHPS'" level="info"/>
-                    <t t-if="doc.payment_term_id.name.lower() and 'riba' in doc.payment_term_id.name.lower()">
+                    <t t-if="doc.payment_term_id.fatturapa_pm_id.name.lower() and 'riba' in doc.payment_term_id.fatturapa_pm_id.name.lower()">
                         <t t-foreach="doc.partner_id.bank_ids" t-as="account">
                             <div style="width: 500px;">
                                 <span><strong>Banca:</strong> <t t-esc="account.bank_id.name"/></span>
                             </div>
                             <div>
-                                <strong>ABI:</strong> <t t-esc="account.bank_id.bic"/> <strong>CAB:</strong> <t t-esc="account.bank_id.bic"/>
+                                <strong>ABI:</strong> <t t-esc="account.bank_id.abi"/> <strong>CAB:</strong> <t t-esc="account.bank_id.cab"/>
                             </div>
                         </t>
                     </t>
